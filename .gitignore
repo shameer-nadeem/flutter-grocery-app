@@ -11,3 +11,5 @@ android/app/build/
 .idea/
 .vscode/
 *.iml
+google-services.json
+lib/firebase_options.dart
