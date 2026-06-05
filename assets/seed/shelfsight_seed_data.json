@@ -1,0 +1,86 @@
+{
+  "users": [
+    {
+      "uid": "seed_admin_supervisor",
+      "email": "supervisor@shelfsight.com",
+      "name": "Store Supervisor",
+      "role": "admin",
+      "scanAccuracy": 97.4,
+      "shiftsCompleted": 18
+    },
+    {
+      "uid": "seed_user_ayesha",
+      "email": "ayesha@shelfsight.com",
+      "name": "Ayesha Khan",
+      "role": "user",
+      "scanAccuracy": 92.8,
+      "shiftsCompleted": 11
+    },
+    {
+      "uid": "seed_user_omar",
+      "email": "omar@shelfsight.com",
+      "name": "Omar Ali",
+      "role": "user",
+      "scanAccuracy": 89.6,
+      "shiftsCompleted": 7
+    }
+  ],
+  "scans": [
+    {
+      "idSuffix": "beverages",
+      "userId": "CURRENT_USER",
+      "userName": "CURRENT_USER",
+      "userEmail": "CURRENT_USER",
+      "title": "Aisle 4 - Beverage Unit",
+      "imageUrl": "assets/images/shelf_photo_beverages.png",
+      "productCount": 84,
+      "sosPercentage": 72,
+      "osaPercentage": 93,
+      "compliancePercentage": 88,
+      "ageHours": 2,
+      "recommendation": "Rebalance front-facing beverage rows and move fast-selling SKUs to eye-level placement."
+    },
+    {
+      "idSuffix": "dry_goods",
+      "userId": "CURRENT_USER",
+      "userName": "CURRENT_USER",
+      "userEmail": "CURRENT_USER",
+      "title": "Aisle 2 - Dry Goods",
+      "imageUrl": "assets/images/shelf_photo_dry_goods.png",
+      "productCount": 126,
+      "sosPercentage": 76,
+      "osaPercentage": 91,
+      "compliancePercentage": 86,
+      "ageHours": 5,
+      "recommendation": "Refill visible stock gaps and align label strips to improve shelf compliance."
+    },
+    {
+      "scanId": "seed_produce_shared",
+      "userId": "seed_user_ayesha",
+      "userName": "Ayesha Khan",
+      "userEmail": "ayesha@shelfsight.com",
+      "title": "Zone B - Fresh Produce",
+      "imageUrl": "assets/images/shelf_photo_produce.png",
+      "productCount": 96,
+      "sosPercentage": 81,
+      "osaPercentage": 94,
+      "compliancePercentage": 90,
+      "ageHours": 24,
+      "recommendation": "Current layout is strong. Continue daily stock rotation and freshness checks."
+    },
+    {
+      "scanId": "seed_empty_shared",
+      "userId": "seed_user_omar",
+      "userName": "Omar Ali",
+      "userEmail": "omar@shelfsight.com",
+      "title": "Aisle 7 - Frozen Items",
+      "imageUrl": "assets/images/shelf_photo_empty.png",
+      "productCount": 58,
+      "sosPercentage": 64,
+      "osaPercentage": 82,
+      "compliancePercentage": 79,
+      "ageHours": 28,
+      "recommendation": "Low compliance detected. Refill missing facings and clean the first-row presentation."
+    }
+  ]
+}

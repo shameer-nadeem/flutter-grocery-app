@@ -1,0 +1,12 @@
+Paste these in PowerShell after extracting the zip and opening the project root folder:
+
+cd "C:\flutter projects\ShelfSight_FINAL_COMPLETE_READY"
+flutter pub get
+flutterfire configure --project=shelfsight-e4f1f --platforms=android,web
+firebase use --add
+firebase deploy --only firestore:rules,storage
+flutter clean
+flutter pub get
+flutter run
+
+If your folder name is different, change the cd path.

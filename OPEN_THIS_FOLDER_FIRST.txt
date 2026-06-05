@@ -1,0 +1,30 @@
+OPEN THIS FOLDER IN ANDROID STUDIO.
+
+This is the project root. You must see these files/folders here:
+- pubspec.yaml
+- lib/
+- android/
+- assets/
+- firebase.json
+- firestore.rules
+- storage.rules
+
+Do not open the android folder alone.
+Do not run flutter/firestore commands from android, lib, or Users\Dell.
+Run commands only from this folder.
+
+Package name for Firebase Android app:
+com.shelfsight.app
+
+Project ID from your Firebase screenshot:
+shelfsight-e4f1f
+
+Commands:
+cd "C:\flutter projects\ShelfSight_FINAL_COMPLETE_READY"
+flutter pub get
+flutterfire configure --project=shelfsight-e4f1f --platforms=android,web
+firebase use --add
+firebase deploy --only firestore:rules,storage
+flutter clean
+flutter pub get
+flutter run

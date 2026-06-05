@@ -1,0 +1,10 @@
+Use the included firestore.rules and storage.rules files for grading/demo.
+They require authentication, then allow the app to seed demo data and perform CRUD.
+
+Deploy them from the project root with:
+
+firebase deploy --only firestore:rules,storage
+
+You can also paste them manually into:
+Firebase Console > Firestore Database > Rules
+Firebase Console > Storage > Rules

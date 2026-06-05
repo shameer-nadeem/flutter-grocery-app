@@ -1,0 +1,36 @@
+ShelfSight final submission changes
+
+- Kept existing Firebase/Firestore connection and Firebase project configuration.
+- Refactored/maintained feature-wise Clean Architecture under lib/features.
+- Added Firebase remote data sources for auth/users and scans.
+- Added Firebase demo data seeding after sign-in/sign-up from assets/seed/shelfsight_seed_data.json.
+- Added full scan CRUD: create, read/stream, update and delete.
+- Connected admin screens to all Firebase scans/users and user screens to current-user scans.
+- Added admin user role update from the Users tab: admin can switch users between USER and ADMIN.
+- Removed local static scan history and removed mock repository fallback from the final app entry point.
+- Added Provider-based loading states for auth, image picking, scan analysis, Firestore streams and admin data.
+- Added reusable loading, empty and error state widgets.
+- Added responsive card grid widgets for dashboard, admin dashboard and result metrics.
+- Improved image picker exception handling and scan save error feedback.
+- Improved splash navigation listener cleanup to avoid duplicate navigation.
+- Added platform-safe image handling for Firebase URLs, assets and picked local images.
+- Added Android permissions for internet, camera and gallery image access.
+- Added custom Android launcher icons and updated web app icons from assets/icons/app_icon.png.
+- Added README_FINAL_SUBMISSION.md, FIREBASE_RULES_EXAMPLE.txt and SUBMISSION_CHECKLIST.md for setup/grading.
+
+Demo credentials:
+Admin: admin@shelfsight.com / admin123
+User: user@shelfsight.com / user123
+
+Run:
+flutter clean
+flutter pub get
+flutter run
+
+Additional Firebase connection files:
+- firebase.json
+- firestore.rules
+- storage.rules
+- firestore.indexes.json
+- FIREBASE_CONNECT_AND_TEST.md
+- assets/seed/shelfsight_seed_data.json
